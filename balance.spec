@@ -19,7 +19,7 @@ using a simple command line syntax.
 %description -l pl
 Balance jest prostym, ale bardzo skutecznym tcp proxy z load
 balancingiem. Jego zachowanie w czasie dzia³ania mo¿e byæ kontrolowane
-z linni poleceñ, przy u¿yciu prostej sk³adni.
+z linii poleceñ, przy u¿yciu prostej sk³adni.
 
 %prep
 %setup -q
