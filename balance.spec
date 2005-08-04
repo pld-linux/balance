@@ -1,12 +1,12 @@
 Summary:	TCP proxy with load balancing
 Summary(pl):	Proxy TCP z load balancingiem
 Name:		balance
-Version:	3.19
+Version:	3.24
 Release:	1
 License:	GPL v2
 Group:		Networking/Utilities
 Source0:	http://www.inlab.de/%{name}-%{version}.tar.gz
-# Source0-md5:	7791586953fade0592d0cac215218167
+# Source0-md5:	4f48e4005f037964ec1a0953b639aef7
 URL:		http://www.inlab.de/balance.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
