@@ -25,7 +25,7 @@ z linii poleceñ, przy u¿yciu prostej sk³adni.
 %setup -q
 
 %build
-%{__make} \
+%{__make} balance \
 	CC="%{__cc}" \
 	CFLAGS="%{rpmcflags}"
 
