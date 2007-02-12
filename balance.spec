@@ -1,5 +1,5 @@
 Summary:	TCP proxy with load balancing
-Summary(pl):	Proxy TCP z load balancingiem
+Summary(pl.UTF-8):   Proxy TCP z load balancingiem
 Name:		balance
 Version:	3.35
 Release:	1
@@ -16,10 +16,10 @@ simple but powerful generic TCP proxy with round robin load balancing
 and failover mechanisms. Its behaviour can be controlled at runtime
 using a simple command line syntax.
 
-%description -l pl
+%description -l pl.UTF-8
 Balance jest prostym, ale bardzo skutecznym proxy TCP z load
-balancingiem. Jego zachowanie w czasie dzia≥ania moøe byÊ kontrolowane
-z linii poleceÒ, przy uøyciu prostej sk≥adni.
+balancingiem. Jego zachowanie w czasie dzia≈Çania mo≈ºe byƒá kontrolowane
+z linii polece≈Ñ, przy u≈ºyciu prostej sk≈Çadni.
 
 %prep
 %setup -q
