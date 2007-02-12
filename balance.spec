@@ -1,5 +1,5 @@
 Summary:	TCP proxy with load balancing
-Summary(pl.UTF-8):   Proxy TCP z load balancingiem
+Summary(pl.UTF-8):	Proxy TCP z load balancingiem
 Name:		balance
 Version:	3.35
 Release:	1
