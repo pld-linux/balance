@@ -7,6 +7,7 @@ License:	GPL v2
 Group:		Networking/Utilities
 Source0:	http://www.inlab.de/%{name}-%{version}.tar.gz
 # Source0-md5:	99854615cc58ceb2c5bbf29e35d18018
+Source1:	%{name}.tmpfiles
 URL:		http://www.inlab.de/balance.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -31,10 +32,12 @@ z linii poleceń, przy użyciu prostej składni.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_sbindir},/var/run/balance,%{_mandir}/man1}
+install -d $RPM_BUILD_ROOT{%{_sbindir},/var/run/balance,%{_mandir}/man1} \
+	$RPM_BUILD_ROOT/usr/lib/tmpfiles.d
 
 install balance $RPM_BUILD_ROOT%{_sbindir}
 install balance.1 $RPM_BUILD_ROOT%{_mandir}/man1
+install %{SOURCE1} $RPM_BUILD_ROOT/usr/lib/tmpfiles.d/%{name}.conf
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -44,4 +47,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc README
 %dir %attr(700,root,root) /var/run/balance
 %attr(755,root,root) %{_sbindir}/balance
+/usr/lib/tmpfiles.d/%{name}.conf
 %{_mandir}/man1/*
